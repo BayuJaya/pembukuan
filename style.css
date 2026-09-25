@@ -123,40 +123,44 @@ input[type="date"] {
 /* --- TAMPILAN SAAT DICETAK (PRINT) - GAYA TABEL BUKU KAS --- */
 .print-title { display: none; }
 @media print {
-  /* Setel warna jadi hitam putih pekat biar tinta awet & jelas */
   body { background: #fff; font-size: 11px; color: #000; }
   .no-print { display: none !important; }
   .wrap { max-width: 100%; padding: 0; margin: 0; }
   .card, .head { box-shadow: none; border: 0; padding: 0; margin: 0; }
   
-  /* Judul Laporan */
   .print-title { display: block; margin: 15px 0; font-size: 16px; text-align: center; font-weight: bold; text-transform: uppercase; }
   
-  /* Kotak Ringkasan Saldo di atas tabel */
-  .grid { display: flex; justify-content: space-between; border: 2px solid #000; padding: 10px; margin-bottom: 15px; }
+  .grid { display: flex !important; justify-content: space-between; border: 2px solid #000; padding: 10px; margin-bottom: 15px; }
   .grid .card { width: 30%; text-align: center; border: none; padding: 0; }
   .money { font-size: 16px; margin-top: 4px; color: #000 !important; }
   
-  /* --- BINGKAI TABEL UTAMA (Garis bawah sudah ditutup) --- */
   .list { border: 1px solid #000; margin-top: 10px; } 
   
+  /* Reset Pemaksaan Layout dari HP ke Tabel */
   .row { 
-    display: grid;
-    grid-template-columns: 100px 1fr 120px; 
-    border-bottom: 1px solid #000; 
-    padding: 0; 
-    gap: 0;
-    align-items: stretch; 
+    display: grid !important;
+    grid-template-columns: 100px 1fr 120px !important; 
+    grid-template-areas: none !important; /* Mematikan susunan HP */
+    border-bottom: 1px solid #000 !important; 
+    padding: 0 !important; 
+    gap: 0 !important;
+    align-items: stretch !important; 
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 0 !important;
   }
-  .row:last-child { border-bottom: none; } /* Mencegah garis ganda numpuk di baris paling bawah */
+  .row:last-child { border-bottom: none !important; } 
   
-  /* Jarak dalam sel tabel dan Garis Pembatas Kolom */
-  .col-date, .col-note, .col-amount { padding: 6px 8px; }
-  .col-date { border-right: 1px solid #000; }
-  .col-note { border-right: 1px solid #000; }
+  /* Mematikan pergeseran kolom HP */
+  .col-date, .col-note, .col-amount { 
+    grid-area: auto !important; 
+    padding: 6px 8px !important; 
+    margin-top: 0 !important;
+  }
+  .col-date { border-right: 1px solid #000 !important; }
+  .col-note { border-right: 1px solid #000 !important; border-top: none !important; }
   
-  /* Teks di dalam tabel */
-  .col-amount { font-size: 12px; font-weight: bold; color: #000 !important; margin-top:0; text-align: right; }
+  .col-amount { font-size: 12px; font-weight: bold; color: #000 !important; text-align: right !important; }
   .col-note b { font-size: 11px; }
   .small { font-size: 9px; color: #333; }
 }
