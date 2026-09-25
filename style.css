@@ -18,7 +18,17 @@ body { margin: 0; background: var(--bg); font-family: Arial, sans-serif; color: 
 button { border: 0; border-radius: 10px; padding: 10px 15px; font-weight: 700; cursor: pointer; background: #eaf0ff; color: #1d4ed8; transition: 0.2s; }
 button:hover { opacity: 0.8; }
 .btn-dark { background: var(--text); color: #fff; }
-input[type="date"] { padding: 9px; border: 1px solid var(--line); border-radius: 8px; font-family: inherit; }
+input[type="date"] { 
+  width: 100%; 
+  padding: 10px 12px; 
+  border: 1px solid var(--line); 
+  border-radius: 8px; 
+  font-family: inherit; 
+  background: #ffffff; 
+  color: var(--text); 
+  box-sizing: border-box;
+  min-height: 42px; 
+}
 
 /* --- Kartu Ringkasan (Grid) --- */
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
