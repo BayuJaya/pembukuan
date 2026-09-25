@@ -8,6 +8,14 @@
       "date": "2026-09-25",
       "note": "testing sistem baru",
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790344730208.jpg"
+    },
+    {
+      "id": 1790344760808,
+      "type": "masuk",
+      "date": "2026-09-25",
+      "note": "",
+      "amount": 234567,
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790344760808.jpg"
     }
   ]
 }
