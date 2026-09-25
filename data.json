@@ -16,6 +16,14 @@
       "id": 1790345110383,
       "note": "BENSIN MOBIL",
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790345110383.jpg"
+    },
+    {
+      "note": "ALAT2 BONGKAR MUAT",
+      "date": "2026-09-25",
+      "amount": 190000,
+      "id": 1790345150773,
+      "type": "keluar",
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790345150773.jpg"
     }
   ]
 }
