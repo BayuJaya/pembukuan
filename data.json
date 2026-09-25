@@ -24,6 +24,14 @@
       "note": "ALAT2 BONGKAR MUAT",
       "amount": 190000,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790345150773.jpg"
+    },
+    {
+      "amount": 102000,
+      "id": 1790346641837,
+      "date": "2026-09-25",
+      "note": "Kampak dll",
+      "type": "keluar",
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790346641837.jpg"
     }
   ]
 }
