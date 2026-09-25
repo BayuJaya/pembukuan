@@ -1,0 +1,21 @@
+{
+  "company": "bayu jaya",
+  "transactions": [
+    {
+      "id": 1,
+      "type": "masuk",
+      "date": "2026-09-24",
+      "amount": 5000000,
+      "note": "Pembayaran Invoice A",
+      "photo": ""
+    },
+    {
+      "id": 2,
+      "type": "keluar",
+      "date": "2026-09-25",
+      "amount": 1500000,
+      "note": "Beli Solar",
+      "photo": ""
+    }
+  ]
+}

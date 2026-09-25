@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laporan Dana - Viewer</title>
+  <!-- Menghubungkan ke file CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Menghubungkan ke file JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <div class="company"><span id="companyName">Memuat...</span></div>
+      <div class="small">Laporan Pembukuan (Hanya Tampilan)</div>
+    </div>
+
+    <!-- Ringkasan Saldo -->
+    <div class="grid">
+      <div class="card"><div class="label">DANA MASUK</div><div class="money in" id="sumIn">Rp 0</div></div>
+      <div class="card"><div class="label">DANA KELUAR</div><div class="money out" id="sumOut">Rp 0</div></div>
+      <div class="card"><div class="label">SALDO</div><div class="money" id="balance">Rp 0</div></div>
+    </div>
+
+    <!-- Area Filter dan Tabel -->
+    <div class="card mt-14">
+      <div class="actions-bar no-print">
+        <div class="filter-inputs">
+          <div class="input-group">
+            <label>Dari Tanggal</label>
+            <input type="date" id="from">
+          </div>
+          <div class="input-group">
+            <label>Sampai Tanggal</label>
+            <input type="date" id="to">
+          </div>
+        </div>
+        <div class="action-buttons">
+          <button onclick="render()">🔎 Filter</button>
+          <button onclick="loadDataDariJSON()">🔄 Refresh</button>
+          <button class="btn-dark" onclick="window.print()">🖨️ Cetak</button>
+        </div>
+      </div>
+
+      <h2 class="print-title" id="printTitle">Laporan Dana</h2>
+      
+      <!-- Tempat list transaksi dirender oleh JS -->
+      <div id="list" class="list">
+         <div class="loading">Mengambil data terbaru...</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
