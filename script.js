@@ -7,36 +7,31 @@ function rupiah(n) {
   return new Intl.NumberFormat('id-ID', {style: 'currency', currency: 'IDR', maximumFractionDigits: 0}).format(n||0);
 }
 
-// Fungsi utama: Mengambil data JSON secara REAL-TIME via GitHub API
+// --- Fungsi utama: Mengambil data JSON ---
 async function loadDataDariJSON() {
   try {
-    $('list').innerHTML = '<div class="loading">Mengambil data terbaru...</div>';
+    document.getElementById('list').innerHTML = '<div class="loading">Mengambil data terbaru...</div>';
     
-    // Memanggil API GitHub secara langsung agar tidak ada jeda cache
-    const url = 'https://api.github.com/repos/BayuJaya/pembukuan/contents/data.json';
+    // Gunakan jalur RAW agar tidak terkena limit API 60x/jam
+    const url = 'https://raw.githubusercontent.com/BayuJaya/pembukuan/main/data.json';
     
-    // Memaksa browser untuk tidak menggunakan cache lama
-    const response = await fetch(url, {
-      headers: { 'Cache-Control': 'no-cache', 'Pragma': 'no-cache' }
+    // Memaksa browser mengabaikan cache lama dengan parameter waktu dan no-store
+    const response = await fetch(url + '?t=' + new Date().getTime(), {
+      cache: 'no-store' 
     }); 
     
-    if (!response.ok) throw new Error("Gagal mengambil data dari API");
+    if (!response.ok) throw new Error("Gagal mengambil data");
     
-    const apiData = await response.json();
-    
-    // GitHub API mengirim isi file dalam format Base64, kita harus menerjemahkannya (Decode)
-    const decodedContent = decodeURIComponent(escape(window.atob(apiData.content)));
-    const jsonData = JSON.parse(decodedContent);
-    
+    const jsonData = await response.json();
     globalData = jsonData.transactions || [];
     companyName = jsonData.company || "NAMA PERUSAHAAN";
     
-    $('companyName').textContent = companyName;
+    document.getElementById('companyName').textContent = companyName;
     render(); // Tampilkan ke layar
     
   } catch (error) {
     console.error(error);
-    $('list').innerHTML = '<div class="empty" style="color:red;">Gagal memuat data secara real-time. Pastikan internet stabil.</div>';
+    document.getElementById('list').innerHTML = '<div class="empty" style="color:red;">Gagal memuat data. Pastikan file data.json ada di GitHub.</div>';
   }
 }
 
