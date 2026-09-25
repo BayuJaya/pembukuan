@@ -7,20 +7,27 @@ function rupiah(n) {
   return new Intl.NumberFormat('id-ID', {style: 'currency', currency: 'IDR', maximumFractionDigits: 0}).format(n||0);
 }
 
-// Fungsi utama: Mengambil data JSON
+// Fungsi utama: Mengambil data JSON secara REAL-TIME via GitHub API
 async function loadDataDariJSON() {
   try {
     $('list').innerHTML = '<div class="loading">Mengambil data terbaru...</div>';
     
-    // Sesuaikan nama file/URL ini. Untuk tes lokal gunakan 'data.json'
-    const url = 'data.json'; 
+    // Memanggil API GitHub secara langsung agar tidak ada jeda cache
+    const url = 'https://api.github.com/repos/BayuJaya/pembukuan/contents/data.json';
     
-    // Parameter waktu mencegah browser menyimpan cache lama
-    const response = await fetch(url + '?t=' + new Date().getTime()); 
+    // Memaksa browser untuk tidak menggunakan cache lama
+    const response = await fetch(url, {
+      headers: { 'Cache-Control': 'no-cache', 'Pragma': 'no-cache' }
+    }); 
     
-    if (!response.ok) throw new Error("Gagal mengambil data");
+    if (!response.ok) throw new Error("Gagal mengambil data dari API");
     
-    const jsonData = await response.json();
+    const apiData = await response.json();
+    
+    // GitHub API mengirim isi file dalam format Base64, kita harus menerjemahkannya (Decode)
+    const decodedContent = decodeURIComponent(escape(window.atob(apiData.content)));
+    const jsonData = JSON.parse(decodedContent);
+    
     globalData = jsonData.transactions || [];
     companyName = jsonData.company || "NAMA PERUSAHAAN";
     
@@ -29,7 +36,7 @@ async function loadDataDariJSON() {
     
   } catch (error) {
     console.error(error);
-    $('list').innerHTML = '<div class="empty" style="color:red;">Gagal memuat data. Pastikan file data.json tersedia.</div>';
+    $('list').innerHTML = '<div class="empty" style="color:red;">Gagal memuat data secara real-time. Pastikan internet stabil.</div>';
   }
 }
 
