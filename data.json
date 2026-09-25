@@ -10,12 +10,12 @@
       "photo": ""
     },
     {
-      "id": 2,
       "type": "keluar",
+      "id": 2,
       "date": "2026-09-25",
-      "amount": 1500000,
+      "photo": "",
       "note": "Beli Solar",
-      "photo": ""
+      "amount": 1500000
     },
     {
       "type": "masuk",
