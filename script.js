@@ -92,14 +92,29 @@ function viewPhoto(src) {
   img.src = src;
   modal.style.display = 'flex';
   
-  // Setel href untuk tombol download
-  btnDownload.onclick = function() {
-    const a = document.createElement('a');
-    a.href = src;
-    a.download = 'bukti_transaksi_' + new Date().getTime() + '.png'; // Nama default saat diunduh
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+  // Update logika download khusus untuk link (URL) gambar
+  btnDownload.onclick = async function() {
+    try {
+      // Menarik data gambar dari link untuk dipaksa unduh (force download)
+      btnDownload.innerText = "Mengunduh...";
+      const response = await fetch(src);
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+      
+      const a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = 'bukti_transaksi_' + new Date().getTime() + '.jpg';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(blobUrl);
+      
+      btnDownload.innerText = "Unduh Bukti";
+    } catch(e) {
+      // Jika browser memblokir download otomatis, buka di tab baru sebagai alternatif
+      window.open(src, '_blank');
+      btnDownload.innerText = "Unduh Bukti";
+    }
   };
 }
 
