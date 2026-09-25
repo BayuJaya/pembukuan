@@ -40,6 +40,14 @@
       "type": "keluar",
       "id": 1790346738733,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790346738733.jpg"
+    },
+    {
+      "type": "keluar",
+      "date": "2026-09-25",
+      "id": 1790346806655,
+      "note": "Bayar tbs rahmat 3496kg",
+      "amount": 11169760,
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790346806655.jpg"
     }
   ]
 }
