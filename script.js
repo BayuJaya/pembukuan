@@ -81,10 +81,28 @@ function escapeHtml(s) {
   return s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 }
 
-// Fitur klik foto perbesar
+// --- Fungsi Pop-up Foto ---
 function viewPhoto(src) {
-  let w = window.open();
-  w.document.write(`<title>Lampiran</title><body style="margin:0; background:#222; display:flex; align-items:center; justify-content:center; height:100vh;"><img src="${src}" style="max-width:90%; max-height:90%; border-radius:8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);"></body>`);
+  const modal = document.getElementById('photoModal');
+  const img = document.getElementById('modalImg');
+  const btnDownload = document.getElementById('btnDownload');
+  
+  img.src = src;
+  modal.style.display = 'flex';
+  
+  // Setel href untuk tombol download
+  btnDownload.onclick = function() {
+    const a = document.createElement('a');
+    a.href = src;
+    a.download = 'bukti_transaksi_' + new Date().getTime() + '.png'; // Nama default saat diunduh
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+}
+
+function closePhoto() {
+  document.getElementById('photoModal').style.display = 'none';
 }
 
 // Jalankan otomatis saat web selesai dimuat
