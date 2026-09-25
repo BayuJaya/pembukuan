@@ -8,6 +8,14 @@
       "note": "TF DARI PAK ADE",
       "amount": 30000000,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790345075808.jpg"
+    },
+    {
+      "date": "2026-09-25",
+      "amount": 400000,
+      "type": "keluar",
+      "id": 1790345110383,
+      "note": "BENSIN MOBIL",
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790345110383.jpg"
     }
   ]
 }
