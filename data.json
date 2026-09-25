@@ -1,14 +1,4 @@
 {
-  "company": "bayu jaya",
-  "transactions": [
-    {},
-    {
-      "id": 1790344539216,
-      "note": "",
-      "type": "masuk",
-      "amount": 3456789,
-      "date": "2026-09-25",
-      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790344539216.jpg"
-    }
-  ]
+  "company": "BAYU JAYA",
+  "transactions": []
 }
