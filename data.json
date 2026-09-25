@@ -2,14 +2,6 @@
   "company": "bayu jaya",
   "transactions": [
     {
-      "id": 1,
-      "type": "masuk",
-      "date": "2026-09-24",
-      "amount": 5000000,
-      "note": "Pembayaran Invoice A",
-      "photo": ""
-    },
-    {
       "type": "keluar",
       "id": 2,
       "date": "2026-09-25",
