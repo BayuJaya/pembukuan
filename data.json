@@ -2,11 +2,11 @@
   "company": "RAM BRAHMA",
   "transactions": [
     {
-      "date": "2026-09-25",
-      "id": 1790345075808,
-      "type": "masuk",
-      "note": "TF DARI PAK ADE",
       "amount": 30000000,
+      "note": "TF DARI PAK ADE",
+      "date": "2026-09-22",
+      "type": "masuk",
+      "id": 1790345075808,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790345075808.jpg"
     },
     {
