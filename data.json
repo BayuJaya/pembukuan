@@ -2,14 +2,6 @@
   "company": "bayu jaya",
   "transactions": [
     {
-      "type": "keluar",
-      "id": 2,
-      "date": "2026-09-25",
-      "photo": "",
-      "note": "Beli Solar",
-      "amount": 1500000
-    },
-    {
       "amount": 3333,
       "note": "testinggg",
       "date": "2026-09-25",
