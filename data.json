@@ -2,14 +2,6 @@
   "company": "bayu jaya",
   "transactions": [
     {
-      "amount": 3333,
-      "note": "testinggg",
-      "date": "2026-09-25",
-      "type": "masuk",
-      "id": 1790338101219,
-      "photo": ""
-    },
-    {
       "date": "2026-09-25",
       "type": "masuk",
       "id": 1790338195364,
