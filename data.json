@@ -32,6 +32,14 @@
       "note": "Kampak dll",
       "type": "keluar",
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790346641837.jpg"
+    },
+    {
+      "amount": 11891680,
+      "date": "2026-09-24",
+      "note": "Bayar tbs pak rahmat 3722kg",
+      "type": "keluar",
+      "id": 1790346738733,
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790346738733.jpg"
     }
   ]
 }
