@@ -1,0 +1,18 @@
+{
+  "company": "RAM BRAHMA",
+  "transactions": [
+    {
+      "tarra": 2345,
+      "waktu": "18.20.11",
+      "netto": 0,
+      "bruto": 2345,
+      "tanggal": "27/9/2026",
+      "supplier": "WERT",
+      "driver": "ASDF",
+      "doNo": "1",
+      "police": "234RG",
+      "potongan": 4444,
+      "id": 1790508019355
+    }
+  ]
+}
