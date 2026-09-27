@@ -2,6 +2,23 @@
   "company": "RAM BRAHMA",
   "transactions": [
     {
+      "jenisBarang": "TBS",
+      "netto": "231107",
+      "keterangan": "",
+      "supplier": "1234",
+      "beratBersih": "231107",
+      "tanggal": "2026-09-27",
+      "driver": "qwerf",
+      "police": "1234",
+      "tipe": "MASUK",
+      "jenisMobil": "234",
+      "tara": "1234",
+      "jam": "23:07",
+      "id": 1790525281083,
+      "bruto": "232341",
+      "totalUang": "0"
+    },
+    {
       "doNo": "3456",
       "supplier": "SDFGH",
       "tarra": 6789,
