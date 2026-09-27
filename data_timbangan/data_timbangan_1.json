@@ -2,6 +2,19 @@
   "company": "RAM BRAHMA",
   "transactions": [
     {
+      "doNo": "3456",
+      "supplier": "SDFGH",
+      "tarra": 6789,
+      "netto": 26871,
+      "bruto": 34567,
+      "driver": "WEDRFGH",
+      "tanggal": "27/9/2026",
+      "potongan": 907,
+      "waktu": "18.37.16",
+      "police": "SDFGHJ",
+      "id": 1790509044158
+    },
+    {
       "tarra": 2345,
       "waktu": "18.20.11",
       "netto": 0,
