@@ -51,10 +51,10 @@
     },
     {
       "date": "2026-09-27",
-      "id": 1790562720754,
       "note": "Uang jalan sopir krim tbs  muatan 9260kg",
+      "id": 1790562720754,
+      "type": "keluar",
       "amount": 1000000,
-      "type": "masuk",
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790562720754.jpg"
     }
   ]
