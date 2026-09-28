@@ -48,6 +48,14 @@
       "note": "Bayar tbs rahmat 3496kg",
       "amount": 11169760,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790346806655.jpg"
+    },
+    {
+      "date": "2026-09-27",
+      "id": 1790562720754,
+      "note": "Uang jalan sopir krim tbs  muatan 9260kg",
+      "amount": 1000000,
+      "type": "masuk",
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790562720754.jpg"
     }
   ]
 }
