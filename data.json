@@ -56,6 +56,14 @@
       "type": "keluar",
       "amount": 1000000,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790562720754.jpg"
+    },
+    {
+      "type": "masuk",
+      "date": "2026-09-28",
+      "amount": 8808600,
+      "note": "Uang masuk pengiriman ke pks minanga",
+      "id": 1790650110193,
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790650110193.jpg"
     }
   ]
 }
