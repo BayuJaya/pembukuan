@@ -79,6 +79,14 @@
       "type": "keluar",
       "date": "2026-09-28",
       "note": "Tambahan bongkar muat "
+    },
+    {
+      "id": 1790651847086,
+      "amount": 500000,
+      "type": "keluar",
+      "date": "2026-09-28",
+      "note": "Pertamax",
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790651847086.jpg"
     }
   ]
 }
