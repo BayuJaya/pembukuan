@@ -72,6 +72,13 @@
       "id": 1790650168711,
       "amount": 645200,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790650168711.jpg"
+    },
+    {
+      "id": 1790650221566,
+      "amount": 155000,
+      "type": "keluar",
+      "date": "2026-09-28",
+      "note": "Tambahan bongkar muat "
     }
   ]
 }
