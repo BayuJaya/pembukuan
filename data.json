@@ -64,6 +64,14 @@
       "note": "Uang masuk pengiriman ke pks minanga",
       "id": 1790650110193,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790650110193.jpg"
+    },
+    {
+      "date": "2026-09-28",
+      "type": "keluar",
+      "note": "Gajih karyawan bongkar muat",
+      "id": 1790650168711,
+      "amount": 645200,
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790650168711.jpg"
     }
   ]
 }
