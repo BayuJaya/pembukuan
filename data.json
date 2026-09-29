@@ -95,6 +95,14 @@
       "amount": 560000,
       "id": 1790683997475,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790683997475.jpg"
+    },
+    {
+      "id": 1790689050560,
+      "amount": 100000,
+      "note": "Obat rumput",
+      "type": "keluar",
+      "date": "2026-09-29",
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790689050560.jpg"
     }
   ]
 }
