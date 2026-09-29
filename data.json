@@ -87,6 +87,14 @@
       "date": "2026-09-28",
       "note": "Pertamax",
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790651847086.jpg"
+    },
+    {
+      "note": "Ongkos pobil ke PT.ISL",
+      "date": "2026-09-29",
+      "type": "keluar",
+      "amount": 560000,
+      "id": 1790683997475,
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790683997475.jpg"
     }
   ]
 }
