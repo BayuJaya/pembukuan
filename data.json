@@ -103,6 +103,14 @@
       "type": "keluar",
       "date": "2026-09-29",
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790689050560.jpg"
+    },
+    {
+      "type": "masuk",
+      "date": "2026-10-01",
+      "note": "UANG MASUK DARI Pt.isl",
+      "amount": 1054000,
+      "id": 1790823674780,
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790823674780.jpg"
     }
   ]
 }
