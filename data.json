@@ -111,6 +111,14 @@
       "type": "masuk",
       "id": 1790823674780,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790823674780.jpg"
+    },
+    {
+      "amount": 200000,
+      "date": "2026-10-01",
+      "note": "Subsidi kopi +makan siang warung pak basri",
+      "type": "keluar",
+      "id": 1790856980655,
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790856980655.jpg"
     }
   ]
 }
