@@ -135,6 +135,13 @@
       "note": "Tbs ms rahmat nota4",
       "date": "2026-10-04",
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1791091155896.jpg"
+    },
+    {
+      "date": "2026-10-04",
+      "id": 1791091186344,
+      "type": "keluar",
+      "note": "Tbs pak rahmat nota 5",
+      "amount": 2700250
     }
   ]
 }
