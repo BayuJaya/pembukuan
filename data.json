@@ -119,6 +119,13 @@
       "type": "keluar",
       "id": 1790856980655,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1790856980655.jpg"
+    },
+    {
+      "id": 1791091091870,
+      "amount": 11373000,
+      "note": "Tbs pak rahmat",
+      "date": "2026-10-04",
+      "type": "keluar"
     }
   ]
 }
