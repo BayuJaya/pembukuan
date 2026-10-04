@@ -127,6 +127,14 @@
       "note": "Tbs pak rahmat nota 3",
       "type": "keluar",
       "photo": ""
+    },
+    {
+      "id": 1791091155896,
+      "amount": 10916000,
+      "type": "keluar",
+      "note": "Tbs ms rahmat nota4",
+      "date": "2026-10-04",
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1791091155896.jpg"
     }
   ]
 }
