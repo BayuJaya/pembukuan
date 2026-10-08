@@ -150,6 +150,14 @@
       "date": "2026-10-07",
       "id": 1791425064761,
       "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1791425064761.jpg"
+    },
+    {
+      "type": "keluar",
+      "amount": 520000,
+      "date": "2026-10-08",
+      "note": "Ibuk2 brondol dan muat",
+      "id": 1791450002836,
+      "photo": "https://raw.githubusercontent.com/BayuJaya/pembukuan/main/foto_bukti/bukti_1791450002836.jpg"
     }
   ]
 }
